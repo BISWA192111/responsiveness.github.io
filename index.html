@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Batch Resolutions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+		}
+
+		.header {
+			background-color: #f1f1f1;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+		}
+
+		.content {
+			padding: 16px;
+		}
+
+		.resolutions {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.resolutions input[type=text] {
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: none;
+			border-bottom: 2px solid #ccc;
+			width: 100%;
+		}
+
+		.resolutions input[type=text]:focus {
+			outline: none;
+			border-bottom: 2px solid #555;
+		}
+
+		.resolutions button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		.resolutions button:hover {
+			opacity: 0.8;
+		}
+
+		@media screen and (max-width: 600px) {
+			.resolutions input[type=text] {
+				width: 100%;
+				margin-top: 0;
+			}
+			.resolutions button {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Batch Resolutions</h2>
+  <p>Write your resolution and share it with your batchmates!</p>
+</div>
+
+<div class="content">
+  <div class="resolutions">
+    <form>
+      <input type="text" placeholder="Enter your resolution" name="resolution" required>
+      <button type="submit">Add</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
